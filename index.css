@@ -1,0 +1,134 @@
+body {
+    font-family: Merge One, Arial, Helvetica, sans-serif;
+    background-color: #FEF5E9;
+}
+
+h1, h2, h3 {
+    font-family: Denne Etude, Arial, Helvetica, sans-serif;
+    color: #16AC9C;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 3em;
+    text-align: center;
+    width: 100%;
+}
+
+h3 {
+    display: inline;
+}
+
+nav {
+    background-color: #FEF5E9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1em;
+    text-align: right;
+}
+
+nav a {
+    font-family: Denne Etude, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 0.2em 1em 0.2em 1em;
+    color: #40BCCF;
+}
+
+nav a img {
+    width: 5em;
+    float: left;
+    margin-left: 2em;
+}
+
+nav a:last-of-type {
+    margin-right: 20%;
+}
+
+img {
+    width: 20em;
+}
+
+.intro {
+    margin-top: 8em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro div a {
+    text-decoration: none;
+    border: 3px solid #16AC9C;
+    border-radius: 10px;
+    padding: 0.2em 2em 0.2em 2em;
+    font-family: Denne Etude, Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: #16AC9C;
+    display: inline-block;
+    margin-top: 0.5em;
+}
+
+.intro div a:last-of-type:hover {
+    background-color: #16AC9C;
+    color: #FEF5E9;
+}
+
+.intro div a:first-of-type {
+    background-color: #16AC9C;
+    color: #FEF5E9;
+    padding: 0.2em 1em 0.2em 1em;
+}
+
+.intro div a:first-of-type:hover {
+    background-color: #FEF5E9;
+    color: #16AC9C;
+}
+
+.intro div {
+    margin: 2em;
+    width: 40%;
+}
+
+.intro div:first-of-type {
+    float: left;
+}
+
+.intro div:last-of-type {
+    float: right;
+}
+
+.hoewerkthet div {
+    width: 20%;
+    display: inline-block;
+    margin: 2em;
+}
+
+.hoewerkthet div img {
+    width: 80%;
+    max-width: 10em;
+}
+
+.hoewerkthet div h3 {
+    font-size: 10em;
+    text-align: center;
+}
+
+@media (max-width:750px) {
+    .intro div:first-of-type, .intro div:last-of-type {
+        float: none;
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+
+    .intro div img {
+        margin-top: 3em;
+        width: 100%;
+    }
+}
