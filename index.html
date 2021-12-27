@@ -5,15 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="index.css">
     <title>Bouwsteen</title>
+    <link rel="icon" type="image/x-icon" href="/images/Final-logo_Bouwsteen.png">
 </head>
 
 <body>
     <nav>
         <a href="index.html"><img src="/images/Final-logo_Bouwsteen.png" alt="logo Bouwsteen"></a>
-        <a href="">home</a>
-        <a href="">scholen</a>
+        <div class="fullnav">
+            <a href="index.html">home</a>
+            <a href="scholen.html">scholen</a>
+        </div>
+        <div class="mobilenav closed">
+            <div class="div1"></div>
+            <div class="div2"></div>
+            <div class="div3"></div>
+        </div>
+        <div class="mobilenav opened">
+            <a href="index.html#hoewerkthet">Hoe werkt het?</a>
+            <a href="index.html#wiezijnwij">Wie zijn wij?</a>
+            <a href="scholen.html">scholen</a>
+        </div>
     </nav>
     <div class="intro">
         <div>
@@ -21,15 +35,15 @@
             <p>De motivatie van leerlingen in het lager onderwijs is in de voorbije jaren met …% gezakt. Om de leerlingen
                 een maximum aan motivatie te geven en leerkrachten zo min mogelijk extra werk te geven, hebben wij Bouwsteen
                 ontwikkeld. Een webapplicatie die op een speelse manier ervoor zorgt dat elke leerling in orde zal zijn.</p>
-            <a href="">start proefmaand</a>
-            <a href="">meer info</a>
+            <a href="#">start proefmaand</a>
+            <a href="#">meer info</a>
         </div>
         <div>
             <img src="/images/foto1.jpg" alt="kinderen in het lager onderwijs die gemotiveerd hun hand op steken">
         </div>
     </div>
 
-    <div class="hoewerkthet">
+    <div class="hoewerkthet" id="hoewerkthet">
         <h2>Hoe werkt het?</h2>
         <div>
             <h3>1</h3>
@@ -54,7 +68,7 @@
         </div>
     </div>
 
-    <div>
+    <div class="wiezijnwij" id="wiezijnwij">
         <h2>Wie zijn wij?</h2>
         <p>Wij zijn drie studenten Interactive Multimedia Design en maken hiervan ons eindwerk. Dit project startte op
             de lagere school, we peilden naar de motivatie van jonge leerlingen en constateerden dat dit de laatste
@@ -64,7 +78,8 @@
             staan wij ook. <span>Een minimale inspanning voor een maximale motivatie</span>.</p>
     </div>
 
-    <div>
+    <div class="nieuwsbrief">
+        <div>
         <h2>Wil je op de hoogte blijven van ons project?</h2>
         <p>Schrijf je in op onze nieuwsbrief.</p>
 
@@ -115,24 +130,30 @@
             }(jQuery));
             var $mcj = jQuery.noConflict(true);
         </script>
+        </div>
     </div>
 
-    <div>
+    <div class="info">
         <img src="images/foto2.png" alt="foto van kind achter laptop">
-        <a href="">start proefmaand</a>
-        <a href="">meer info</a>
+        <div>
+            <a href="">start proefmaand</a>
+            <a href="">meer info</a>
+        </div>
     </div>
 
     <footer>
-        <h3>Contact</h3>
-        <p><a href="mailto:someone@example.com">info@bouwsteen.site</a></p>
+        <div>
+            <h3>Contact</h3>
+            <p><a href="mailto:someone@example.com">info@bouwsteen.site</a></p>
+        
         <h3>Hoe werkt het?</h3>
         <h3>Wie zijn wij?</h3>
         <h3>Scholen</h3>
-        <h3>Download</h3>
         <p>© Bouwsteen 2021</p>
+    </div>
     </footer>
 
+    <script src="js/nav.js"></script>
 </body>
 
 </html>

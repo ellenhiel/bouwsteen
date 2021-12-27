@@ -33,7 +33,7 @@ nav {
     text-align: right;
 }
 
-nav a {
+nav div a {
     font-family: Denne Etude, Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-size: 1.5em;
@@ -47,8 +47,12 @@ nav a img {
     margin-left: 2em;
 }
 
-nav a:last-of-type {
+nav div a:last-of-type {
     margin-right: 20%;
+}
+
+.mobilenav {
+    display: none;
 }
 
 img {
@@ -62,7 +66,7 @@ img {
     margin-right: auto;
 }
 
-.intro div a {
+.intro div a, .info a {
     text-decoration: none;
     border: 3px solid #16AC9C;
     border-radius: 10px;
@@ -74,18 +78,18 @@ img {
     margin-top: 0.5em;
 }
 
-.intro div a:last-of-type:hover {
+.intro div a:last-of-type:hover, .info a:last-of-type:hover {
     background-color: #16AC9C;
     color: #FEF5E9;
 }
 
-.intro div a:first-of-type {
+.intro div a:first-of-type, .info a:first-of-type {
     background-color: #16AC9C;
     color: #FEF5E9;
     padding: 0.2em 1em 0.2em 1em;
 }
 
-.intro div a:first-of-type:hover {
+.intro div a:first-of-type:hover, .info a:first-of-type:hover {
     background-color: #FEF5E9;
     color: #16AC9C;
 }
@@ -101,6 +105,11 @@ img {
 
 .intro div:last-of-type {
     float: right;
+}
+
+.hoewerkthet {
+    margin: 0 auto;
+    width: 80%;
 }
 
 .hoewerkthet div {
@@ -119,6 +128,99 @@ img {
     text-align: center;
 }
 
+.wiezijnwij {
+    margin: auto;
+    margin-bottom: 4em;
+    width: 50%;
+}
+
+.wiezijnwij span {
+    color: #16AC9C;
+}
+
+.nieuwsbrief {
+    background-color: #FCD424;
+}
+
+.nieuwsbrief h2, .nieuwsbrief p {
+    color: #FEF5E9;
+    margin-top: 0.5em;
+    text-align: left;
+}
+
+.nieuwsbrief div {
+    margin: auto;
+    width: max-content;
+}
+
+.nieuwsbrief p {
+    margin-top: -1.5em;
+}
+
+.nieuwsbrief div form input {
+    border: none;
+    border-radius: 10px;
+    padding: 0.5em;
+}
+
+.nieuwsbrief div form div {
+    display: inline-block;
+    padding-bottom: 1em;
+}
+
+.nieuwsbrief div form .button {
+    border: none;
+    border-radius: 10px;
+    padding: 0.5em 2em 0.5em 2em;
+    background-color: #16AC9C;
+    color: #FEF5E9;
+}
+
+.opened {
+    display: none;
+}
+
+.info div {
+    display: block;
+    margin: 1em auto 0 auto;
+    width: max-content;    
+}
+
+.info img {
+  display: block;
+  margin: 4em auto 0 auto;
+  width: 30em;
+}
+
+footer {
+    background-color: #40BCCF;
+    margin-top: 5em;
+    padding: 1em;
+    color: #FEF5E9;
+}
+
+footer div p:last-of-type {
+    text-align: center;
+    margin: 1em auto 0 auto;
+    width: 100%;
+}
+
+footer h3 {
+    font-size: 1.4em;
+    color: #FEF5E9;
+}
+
+footer p a {
+    color: #FEF5E9;
+}
+
+footer div {
+    width: 50%;
+    display: block;
+    margin: 0 auto 0 auto;  
+    text-align: center; 
+}
+
 @media (max-width:750px) {
     .intro div:first-of-type, .intro div:last-of-type {
         float: none;
@@ -131,4 +233,91 @@ img {
         margin-top: 3em;
         width: 100%;
     }
+
+    .hoewerkthet div {
+        width: 80%;
+        display: block;
+        margin: 2em 2em -1em 2em;
+    }
+
+    .hoewerkthet img {
+        float: right;
+    }
+
+    .hoewerkthet div:nth-child(3) img {
+        margin-top: 3em;
+    }
+
+    .hoewerkthet p {
+        clear: right;
+        display: inline-block;
+    }
+
+    .wiezijnwij {
+        width: 80%;
+    }
+
+    .nieuwsbrief div {
+        width: 80%;
+    }
+
+    .nieuwsbrief #mc_embed_signup {
+        width: 100%;
+    }
+
+    .nieuwsbrief #mc_embed_signup:nth-child(3) {
+        margin-top: 3em;
+    }
+
+    .fullnav {
+        display: none;
+    }
+
+    .mobilenav {
+        display: block;
+    }
+
+    .closed div {
+        float: right;
+        clear: right;
+        background-color: #40BCCF;
+        width: 30px;
+        height: 4px;
+        border-radius: 10px;
+        margin: 5px 3em 0 0;
+        cursor: pointer;
+    }
+
+    .opened {
+        display: none;
+        background-color: #fef5e9;
+        width: 100vw;
+        margin-top: -1em;
+        margin-left: -1em;
+        height: 100vw;
+    }
+
+    .opened a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin-top: 1em;
+        font-size: 3em;
+    }
+
+    .opened a:first-of-type {
+        margin: 20% 0 1em 0;
+    }
+    
+    .info img {
+        width: 60%;
+    }
+
+    .info div a {
+        display: block;
+        margin: 1em auto 0 auto;
+        width: max-content;
+    }
+
 }
