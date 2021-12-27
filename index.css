@@ -66,7 +66,7 @@ img {
     margin-right: auto;
 }
 
-.intro div a, .info a {
+.intro div a, .info a, button {
     text-decoration: none;
     border: 3px solid #16AC9C;
     border-radius: 10px;
@@ -83,7 +83,7 @@ img {
     color: #FEF5E9;
 }
 
-.intro div a:first-of-type, .info a:first-of-type {
+.intro div a:first-of-type, button, .info a:first-of-type {
     background-color: #16AC9C;
     color: #FEF5E9;
     padding: 0.2em 1em 0.2em 1em;
@@ -221,6 +221,87 @@ footer div {
     text-align: center; 
 }
 
+/*scholen.html*/
+
+.gebruik {
+    width: 80%;
+    display: block;
+    margin: 0 auto 0 auto;  
+}
+
+.gebruik h2 {
+    text-align: left;
+}
+
+.gebruik div {
+    width: 60%;
+}
+
+.firstimg {
+    float: right;
+    margin-right: 4em;
+    width: 30%;
+    margin-top: -10em;
+}
+
+.secondimg {
+    width: 30%;
+    display: block;
+    margin: 6em auto 0 auto;  
+}
+
+.waarom {
+    float: right;
+    margin-right: 4em;
+    width: 40%;
+    margin-top: -18em;
+}
+
+.proefversie {
+    width: 60%;
+    display: block;
+    margin: 0 auto 0 auto;  
+}
+
+.proefversie form {
+    width: 60%;
+    display: block;
+    margin: 0 auto 0 auto;  
+}
+
+.proefversie input, .proefversie textarea {
+    border: none;
+    border-radius: 10px;
+    padding: 0.5em;
+}
+
+.proefversie form div {
+    display: inline-block;
+    margin-top: 2em;
+}
+
+.proefversie form .phone {
+    display: block;
+}
+
+.proefversie form .checkbox p {
+    font-size: 0.7em;
+}
+
+.proefversie form .extra textarea {
+    display: block;
+    margin-top: 1em;
+}
+
+button {
+    padding-right: 2em;
+    padding-left: 2em;
+    display: block;
+    margin: 2em auto 0 auto;
+    cursor: pointer;
+}
+
+
 @media (max-width:750px) {
     .intro div:first-of-type, .intro div:last-of-type {
         float: none;
@@ -294,7 +375,7 @@ footer div {
         width: 100vw;
         margin-top: -1em;
         margin-left: -1em;
-        height: 100vw;
+        height: 200vw;
     }
 
     .opened a {
@@ -320,4 +401,33 @@ footer div {
         width: max-content;
     }
 
+    /*scholen.html*/
+
+    .gebruik div {
+        width: 100%;
+    }
+    
+    .firstimg {
+        margin-top: 2em;
+    }
+    
+    .waarom {
+        float: none;
+        display: block;
+        margin: auto;
+        width: 80%;
+        margin-top: 0;
+    }
+
+    .proefversie {
+        width: 80%;
+    }
+
+    .proefversie form{
+        width: 100%;
+    }
+
+    .proefversie form div input {
+        margin-top: 1em;
+    }
 }
