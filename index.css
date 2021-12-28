@@ -1,3 +1,6 @@
+@import url(//db.onlinewebfonts.com/c/3656bc4a3c3dbeecdaa9b6a7897072c3?family=Denne+Etude);
+@import url('http://fonts.cdnfonts.com/css/merge-one');
+
 body {
     font-family: Merge One, Arial, Helvetica, sans-serif;
     background-color: #FEF5E9;
@@ -221,7 +224,7 @@ footer div {
     text-align: center; 
 }
 
-/*scholen.html*/
+/*scholen.php*/
 
 .gebruik {
     width: 80%;
@@ -401,7 +404,7 @@ button {
         width: max-content;
     }
 
-    /*scholen.html*/
+    /*scholen.php*/
 
     .gebruik div {
         width: 100%;

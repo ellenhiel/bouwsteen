@@ -1,3 +1,47 @@
+<?php
+
+    if(!empty($_POST)){            
+        $email = strtolower($_POST['email']);
+        $firstname = strtolower($_POST['firstname']);
+        $lastname = strtolower($_POST['lastname']);
+        $phone = $_POST['phone'];
+        $extra = $_POST['extra'];
+        $checkbox1 = $_POST['checkbox1'];
+        $checkbox2 = $_POST['checkbox2'];
+        if($checkbox1 === "on") {
+            $nieuwsbrief = "ja";
+        } else {
+            $nieuwsbrief = "nee";
+        }
+        if($checkbox2 === "on") {
+            $testpersoon = "ja";
+        } else {
+            $testpersoon = "nee";
+        }
+        $name = "Dag " . $_POST['firstname'] . " " . $_POST['lastname'] . "\n\n" . 
+                "Bedankt voor je deelname als testpersoon aan ons project. We contacteren je zodra ons project klaar is om te testen." . "\n\n" . "\n\n" .
+                "Met vriendelijke groeten," . "\n\n" .
+                "Ellen Hiel, Stijn Bouckaert en Deborah Baeten";
+        $subject = "Proefversie Bouwsteen";
+
+        $info = "Email: " . $email . "\n\n" .
+                    "Voornaam: " . $firstname . "\n\n" .
+                    "Naam: " . $lastname . "\n\n" .
+                    "Nummer: " . $phone . "\n\n" .
+                    "Opmerking: " . $extra . "\n\n" .
+                    "Nieuwsbrief: " . $nieuwsbrief . "\n\n" .
+                    "Testpersoon: " . $testpersoon;
+
+        if ($_POST['email'] == "" || $_POST['firstname'] == "" || $_POST['lastname'] == "") {
+            $error = "Vul alle vereiste vakken in.";
+        } else {
+            mail("elhi12@hotmail.com", $subject, $info);
+            mail($email, $subject, $name);
+            $done = "Bedankt voor je inzending.";
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="nl">
 
@@ -16,7 +60,7 @@
         <a href="index.html"><img src="/images/Final-logo_Bouwsteen.png" alt="logo Bouwsteen"></a>
         <div class="fullnav">
             <a href="index.html">home</a>
-            <a href="scholen.html">scholen</a>
+            <a href="scholen.php">scholen</a>
         </div>
         <div class="mobilenav closed">
             <div class="div1"></div>
@@ -26,7 +70,7 @@
         <div class="mobilenav opened">
             <a href="index.html#hoewerkthet">Hoe werkt het?</a>
             <a href="index.html#wiezijnwij">Wie zijn wij?</a>
-            <a href="scholen.html">scholen</a>
+            <a href="scholen.php">scholen</a>
         </div>
     </nav>
 
@@ -53,11 +97,22 @@
 
     <div class="proefversie">
         <h2>Proefversie aanvragen</h2>
-        <p>Aangezien dit een schoolproject is, zullen we het platform niet up-to-date kunnen houden.
+        <p id="proefversie">Aangezien dit een schoolproject is, zullen we het platform niet up-to-date kunnen houden.
             <br><br>Daarom kunnen we geen proefversie aanbieden maar als je geïnteresseerd bent, laat gerust je gegevens
             hieronder achter.
             <br><br>We zijn nog op zoek naar testgebruikers en alle feedback is welkom.</p>
-        <form action="#">
+            
+        <form action="/scholen.php#proefversie" method="POST" enctype="multipart/form-data" name="EmailForm">
+            <?php if(isset($error)): ?>
+                <br>
+                <p style="color:red;font-weight:bold;"><?php echo $error; ?></p>
+            <?php endif; ?>
+
+            <?php if(isset($done)): ?>
+                <br>
+                <p style="color:green;font-weight:bold;"><?php echo $done; ?></p>
+            <?php endif; ?>
+            
             <div class="firstname">
                 <label for="firstname">Voornaam*</label>
                 <input type="text" name="firstname">
@@ -81,12 +136,12 @@
             <br>
 
             <div class="checkbox">
-                <input type="checkbox" class="checkbox">
+                <input type="checkbox" name="checkbox1" class="checkbox">
                 <label for="checkbox">schrijf mij in voor de nieuwsbrief</label>
             </div>
 
             <div class="checkbox">
-                <input type="checkbox" class="checkbox">
+                <input type="checkbox" name="checkbox2" class="checkbox">
                 <label for="checkbox">ik wil graag testpersoon zijn</label>
                 <p>We zullen je enkele keren contacteren dit schooljaar om online een test te doen waarin je vragen krijgt
                     om in de app te navigeren. Op die manier weten we wat we moeten aanpassen om het gebruiksvriendelijker
