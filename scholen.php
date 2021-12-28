@@ -35,7 +35,7 @@
         if ($_POST['email'] == "" || $_POST['firstname'] == "" || $_POST['lastname'] == "") {
             $error = "Vul alle vereiste vakken in.";
         } else {
-            mail("elhi12@hotmail.com", $subject, $info);
+            mail("info@bouwsteen.site", $subject, $info);
             mail($email, $subject, $name);
             $done = "Bedankt voor je inzending.";
         }
