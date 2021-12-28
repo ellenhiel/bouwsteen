@@ -95,8 +95,8 @@
             <br><br>Nog niet helemaal overtuigd? Probeer dan gratis één maand op proef.</p>
     </div>
 
-    <div class="proefversie">
-        <h2 id="start">Proefversie aanvragen</h2>
+    <div class="proefversie" id="start">
+        <h2>Proefversie aanvragen</h2>
         <p id="proefversie">Aangezien dit een schoolproject is, zullen we het platform niet up-to-date kunnen houden.
             <br><br>Daarom kunnen we geen proefversie aanbieden maar als je geïnteresseerd bent, laat gerust je gegevens
             hieronder achter.
