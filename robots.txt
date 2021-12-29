@@ -1,0 +1,7 @@
+User-agent: Twitterbot
+Disallow:
+
+User-Agent: *
+Allow: /
+
+Sitemap: https://www.bouwsteen.site/sitemap.xml
