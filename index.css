@@ -120,22 +120,31 @@ img {
 .hoewerkthet {
     margin: 0 auto;
     width: 80%;
+    display: table;
+    table-layout: fixed;
 }
 
 .hoewerkthet div {
-    width: 20%;
-    display: inline-block;
-    margin: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    display: table-cell;
+    text-align: center;
+}
+
+.hoewerkthet div p:last-of-type {
+    text-align: left;
 }
 
 .hoewerkthet div img {
-    width: 80%;
+    width: 100%;
     max-width: 10em;
+    display: block;
+    margin: 0 auto;
 }
 
 .hoewerkthet div h3 {
     font-size: 10em;
-    text-align: center;
+    width: max-content;
 }
 
 .wiezijnwij {
@@ -330,14 +339,12 @@ button {
         width: 80%;
         display: block;
         margin: 2em 2em -1em 2em;
+        text-align: left;
     }
 
     .hoewerkthet img {
         float: right;
-    }
-
-    .hoewerkthet div:nth-child(3) img {
-        margin-top: 3em;
+        padding-top: 2em;
     }
 
     .hoewerkthet p {
