@@ -79,7 +79,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     <nav>
-        <a href="/"><img src="/images/Final-logo_Bouwsteen.png" alt="logo Bouwsteen"></a>
+        <a href="/">
+            <!--<img src="/images/Final-logo_Bouwsteen.png" alt="logo Bouwsteen">-->
+            <img src="images/default-image.jpg" alt="logo Bouwsteen">
+        </a>
         <div class="fullnav">
             <a href="/">home</a>
             <a href="scholen">scholen</a>
@@ -107,8 +110,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </div>
 
-    <img class="firstimg" src="/images/foto3.jpg" alt="gemotiveerde kinderen op school">
-    <img class="secondimg" src="/images/foto4.jpg" alt="gemotiveerde kinderen">
+    <img class="firstimg" src="images/foto3.jpg" alt="gemotiveerde kinderen op school">
+    <img class="secondimg" src="images/foto4.jpg" alt="gemotiveerde kinderen">
 
     <div class="waarom">
         <h2>Waarom Bouwsteen?</h2>
