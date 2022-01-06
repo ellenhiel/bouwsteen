@@ -79,10 +79,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     <nav>
-        <a href="index.html"><img src="/images/Final-logo_Bouwsteen.png" alt="logo Bouwsteen"></a>
+        <a href="/"><img src="/images/Final-logo_Bouwsteen.png" alt="logo Bouwsteen"></a>
         <div class="fullnav">
-            <a href="index.html">home</a>
-            <a href="scholen.php">scholen</a>
+            <a href="/">home</a>
+            <a href="scholen">scholen</a>
         </div>
         <div class="mobilenav closed">
             <div class="div1"></div>
@@ -90,9 +90,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="div3"></div>
         </div>
         <div class="mobilenav opened">
-            <a href="index.html#hoewerkthet">Hoe werkt het?</a>
-            <a href="index.html#wiezijnwij">Wie zijn wij?</a>
-            <a href="scholen.php">scholen</a>
+            <a href="/#hoewerkthet">Hoe werkt het?</a>
+            <a href="/#wiezijnwij">Wie zijn wij?</a>
+            <a href="scholen">scholen</a>
         </div>
     </nav>
 
@@ -124,7 +124,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             hieronder achter.
             <br><br>We zijn nog op zoek naar testgebruikers en alle feedback is welkom.</p>
             
-        <form action="/scholen.php#proefversie" method="POST" enctype="multipart/form-data" name="EmailForm">
+        <form action="/scholen#proefversie" method="POST" enctype="multipart/form-data" name="EmailForm">
             <?php if(isset($error)): ?>
                 <br>
                 <p style="color:red;font-weight:bold;"><?php echo $error; ?></p>
