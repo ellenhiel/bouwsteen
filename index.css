@@ -19,6 +19,12 @@ h1, h2, h3 {
     display: inline-block;
 }
 
+.small {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
 h1 {
     font-size: 2.5em;
 }
@@ -43,22 +49,17 @@ nav {
     text-align: right;
 }
 
-nav div a {
+nav div div a {
     font-family: Denne Etude, Arial, Helvetica, sans-serif;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 2em;
     padding: 0.2em 1em 0.2em 1em;
     color: #40BCCF;
 }
 
 nav a img {
-    width: 5em;
+    width: 7em;
     float: left;
-    margin-left: 2em;
-}
-
-nav div a:last-of-type {
-    margin-right: 20%;
 }
 
 .mobilenav {
@@ -251,6 +252,7 @@ footer div {
 
 .gebruik h2 {
     text-align: left;
+    margin-top: 6em;
 }
 
 .gebruik div {
@@ -321,6 +323,29 @@ button {
     cursor: pointer;
 }
 
+@media (min-width:1200px) {
+    .small {
+        width: 70%;
+    }
+}
+
+@media (max-width:800px) {
+    .small {
+        width: 100%;
+    }
+
+    .nieuwsbrief {
+        margin: 0;
+    }
+
+    nav div div a:last-of-type {
+        margin-right: 2em;
+    }
+    
+    nav a img {
+        margin-left: 2em;
+    }
+}
 
 @media (max-width:750px) {
     .intro div:first-of-type, .intro div:last-of-type {
@@ -374,6 +399,7 @@ button {
 
     .mobilenav {
         display: block;
+        margin-right: 2em;
     }
 
     .closed div {
@@ -402,11 +428,12 @@ button {
         width: 100%;
         padding: 0;
         margin-top: 1em;
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     .opened a:first-of-type {
-        margin: 20% 0 1em 0;
+        margin: 16px 0 1em 0;
+        padding: 4em 0 0 0;
     }
     
     .info img {

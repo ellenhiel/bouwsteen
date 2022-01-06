@@ -79,6 +79,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     <nav>
+        <div class="small">
         <a href="/">
             <!--<img src="/images/Final-logo_Bouwsteen.png" alt="logo Bouwsteen">-->
             <img src="images/default-image.jpg" alt="logo Bouwsteen">
@@ -97,8 +98,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a href="/#wiezijnwij">Wie zijn wij?</a>
             <a href="scholen">scholen</a>
         </div>
+        </div>
     </nav>
 
+    <div class="small">
     <div class="gebruik">
         <h2>Het gebruik van Bouwsteen.</h2>
         <div>
@@ -183,6 +186,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <button type="submit">vraag proefversie aan</button>
 
         </form>
+    </div>
     </div>
 
     <footer>
