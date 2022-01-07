@@ -81,8 +81,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <nav>
         <div class="small">
         <a href="/">
-            <!--<img src="/images/Final-logo_Bouwsteen.png" alt="logo Bouwsteen">-->
-            <img src="images/default-image.jpg" alt="logo Bouwsteen">
+            <img src="images/Final-logo_Bouwsteen.png" alt="logo Bouwsteen">
         </a>
         <div class="fullnav">
             <a href="/">home</a>

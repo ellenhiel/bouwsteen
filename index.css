@@ -138,7 +138,8 @@ img {
 
 .hoewerkthet div img {
     width: 100%;
-    max-width: 10em;
+    height: 100%;
+    max-width: 15em;
     display: block;
     margin: 0 auto;
 }
