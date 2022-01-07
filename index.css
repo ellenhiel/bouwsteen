@@ -119,8 +119,6 @@ img {
 }
 
 .hoewerkthet {
-    margin: 0 auto;
-    width: 80%;
     display: table;
     table-layout: fixed;
 }
